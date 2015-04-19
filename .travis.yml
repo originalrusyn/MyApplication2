@@ -1,0 +1,21 @@
+language: android
+jdk:
+  - oraclejdk8
+android:
+  components:
+    - platform-tools
+    - tools
+    - build-tools-22.0.0
+    - android-21
+    - extra-google-google_play_services
+    - extra-google-m2repository
+    - extra-android-m2repository
+    - addon-google_apis-google-21
+notifications:
+  email:
+    recipients:
+      - ntvorennya@gmail.com
+    on_success: always
+    on_failure: always
+script:
+  - gradle check
